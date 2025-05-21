@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Sabores do Oriente</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="formulário.css">
+</head>
+
+<body>
+    <header>
+        <h1>Sabores do Oriente</h1>
+    </header>
+
+    <nav>
+        <div class="back-icon">
+            <a href="index.html">
+                <i class="fas fa-arrow-left"></i>
+            </a>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <div class="auth-options">
+            <div class="auth-card">
+                <h2><i class="fas fa-sign-in-alt"></i> Entrar</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" placeholder="seu@email.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Senha</label>
+                        <input type="password" id="password" placeholder="••••••••" required>
+                    </div>
+
+
+                    <button class="btn-auth" aria-label="Entrar">Entrar</button>
+
+                </form>
+
+                <div class="divider">
+                    <span>ou</span>
+                </div>
+
+                <h2><i class="fas fa-user-plus"></i> Cadastrar</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Nome Completo</label>
+                        <input type="text" id="name" placeholder="Seu nome" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="new-email">E-mail</label>
+                        <input type="email" id="new-email" placeholder="seu@email.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="new-password">Senha</label>
+                        <input type="password" id="new-password" placeholder="Mínimo 8 caracteres" required>
+                    </div>
+
+                    <button type="submit" class="btn-auth">Cadastrar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+<footer>
+    <p>&copy; 2025 Sabores da Terra</p>
+    <p style="margin-top: 0.5rem;"></p>
+</footer>
+
+</html>
