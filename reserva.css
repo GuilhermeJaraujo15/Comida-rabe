@@ -190,18 +190,110 @@ footer {
 }
 
 
-@media (max-width: 768px) {
+/* ========== RESPONSIVIDADE ========== */
+@media (max-width: 992px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    header p {
+        font-size: 1rem;
+    }
+    
     .form-reserva {
+        margin: 1.5rem auto;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Header */
+    header {
+        padding: 1.5rem 1rem;
+    }
+    
+    /* Navegação */
+    nav {
+        padding: 0.75rem;
+    }
+    
+    .user-icon {
+        left: 1rem;
+        font-size: 1.2rem;
+    }
+    
+    /* Formulário */
+    .form-reserva {
+        padding: 1.25rem;
+        width: 95%;
+    }
+    
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 0.65rem;
+    }
+    
+    /* Range slider */
+    .range-labels span {
+        font-size: 0.75rem;
+    }
+    
+    #range-value {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Header */
+    header h1 {
+        font-size: 1.6rem;
+    }
+    
+    /* Formulário */
+    .form-group {
+        margin-bottom: 1.25rem;
+    }
+    
+    .form-group label {
+        font-size: 0.9rem;
+    }
+    
+    /* Range slider */
+    .range-wrapper {
+        gap: 0.5rem;
+    }
+    
+    input[type="range"] {
+        height: 6px;
+    }
+    
+    input[type="range"]::-webkit-slider-thumb {
+        width: 16px;
+        height: 16px;
+    }
+    
+    /* Rodapé */
+    footer {
         padding: 1.5rem;
     }
+}
 
-    .range-container {
-        flex-direction: column;
+/* Melhorias para inputs em mobile */
+@media (max-width: 768px) {
+    input[type="date"],
+    input[type="time"],
+    input[type="tel"] {
+        font-size: 0.9rem;
     }
+    
+    select {
+        font-size: 0.9rem;
+    }
+}
 
-    .range-labels {
-        flex-direction: column;
-        align-items: center;
-        gap: 0.3rem;
+/* Evitar zoom em inputs em iOS */
+@media (max-width: 480px) {
+    input, select, textarea {
+        font-size: 16px !important;
     }
 }

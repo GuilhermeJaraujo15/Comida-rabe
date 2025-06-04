@@ -260,40 +260,107 @@ footer {
 }
 
 
+@media (max-width: 992px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+    
+    header p {
+        font-size: 1.1rem;
+        padding: 0 1rem;
+    }
+}
+
 @media (max-width: 768px) {
-
-    .prato,
-    .prato:nth-child(even) {
+    /* Header */
+    header {
+        padding: 3rem 1rem 1rem;
+    }
+    
+    header h1 {
+        font-size: 2.2rem;
+    }
+    
+    /* Navegação */
+    nav {
         flex-direction: column;
+        padding: 0.5rem;
+        position: relative;
     }
-
-    .prato-img {
-        width: 100%;
-        margin-bottom: 1rem;
+    
+    .user-icon, .reserve-icon {
+        position: static;
+        transform: none;
+        margin: 0.5rem 0;
+        text-align: center;
     }
-
+    
     nav ul {
         flex-direction: column;
-        align-items: center;
         gap: 0.5rem;
+        padding: 0.5rem 0;
     }
-
+    
     nav li {
-        margin: 0.5rem 0;
+        margin: 0;
+        text-align: center;
     }
+    
+    /* Conteúdo */
+    .container {
+        padding: 1rem;
+    }
+    
+    section {
+        padding: 1.5rem;
+    }
+    
+    .prato {
+        gap: 1rem;
+    }
+    
+    .prato-img {
+        min-height: 200px;
+    }
+}
 
+@media (max-width: 480px) {
+    /* Header */
+    header h1 {
+        font-size: 1.8rem;
+    }
+    
+    header p {
+        font-size: 1rem;
+    }
+    
+    /* Cards de pratos */
+    .prato-desc {
+        padding: 0;
+    }
+    
+    .prato h3, .bebida h3 {
+        font-size: 1.2rem;
+    }
+    
+    /* Bebidas */
     .bebidas-container {
         grid-template-columns: 1fr;
     }
+    
+    /* Seção de história */
+    #historia p {
+        text-align: justify;
+    }
+}
 
-    @media (max-width: 480px) {
-        nav ul {
-            flex-direction: column;
-            gap: 0.3rem;
-        }
-
-        h1 {
-            font-size: 2.2rem;
-        }
+/* Melhorias para tablets na horizontal */
+@media (max-width: 992px) and (orientation: landscape) {
+    .prato {
+        flex-direction: column !important;
+    }
+    
+    .prato-img {
+        width: 100%;
     }
 }
